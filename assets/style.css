@@ -1,0 +1,155 @@
+@media (max-width: 600px){
+
+    /* Index CSS */
+
+    body{
+        padding: 0;
+        margin: 0;
+        font-family: 'Mulish', sans-serif;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+    }
+    .top-section{
+        display: flex;
+        justify-content: center;
+    }
+    .sub-heading, .or{
+        display: flex;
+        justify-content: center;
+    }
+    .mid-section button{
+        padding: 1rem 2rem;
+        border-radius: 0.5rem;
+        border: none;
+        color: #fff;
+        background-color: #3751FF;
+        font-size: 1rem;
+        letter-spacing: 0.08rem;
+    }
+    .mid-section a{
+        text-decoration: none;
+        color: #fff;
+        background-color: #3751FF;
+    }
+    .mid-section {
+        display: flex;
+        flex-direction: column;
+        height: 16em;
+        justify-content: space-around;
+    }
+    .sign-in{
+        font-size: 0.83em;
+        margin-left: 0.5em;
+        text-decoration: none;
+        color: #3751FF;
+    }
+    .bottom-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* healthcareManufacturer CSS */
+
+    .hm-container{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+    }
+    .hm-top-section iframe{
+        height: 50vh;
+        width: 100%;
+    }
+    .hm-bottom-section{
+        height: 52vh;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;      
+        background-color: #ffffff;
+        border-radius: 0.8rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .hm-category{
+        display: flex;
+        justify-content: space-around;
+        background-color: #eeeeee;
+        padding: 0.9rem 0.6rem;
+        margin: 0.9rem;
+        border-radius: 0.8rem;
+    }
+    .hm-c-item a{
+        text-decoration: none;
+        color: #000;
+        padding: 0.4rem 1.2rem;
+        border-radius: 0.8rem;
+    }
+    .mat a{
+        background-color: #fff;
+    }
+    .hm-current-location{
+        margin: 0rem 0.9rem;
+    }
+    .hm-sub-heading{
+        font-size: 0.9rem;
+    }
+    .hm-searchInputField{
+        display: flex;
+        flex-direction: column;
+    }
+    .hm-searchInputField input{
+        margin: 0.9rem;
+        height: 2.5rem;
+        border-radius: 1.5rem;
+        padding-left: 4.5rem;
+        border: none;
+        background-color: hsla(38, 100%, 56%, 0.76);
+        font-weight: 500;
+    }
+    .hm-searchInputField img{
+        height: 1.5rem;
+        width: 1.5rem;
+        position: absolute;
+    }
+    .hm-searchInputField input[placeholder="Target Locations"]{
+        font-size: 1rem;
+    }
+    .hm-searchInputField input[placeholder="Target Industry"]{
+        font-size: 1rem;
+    }
+    .hm-top-location{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0.9rem;
+    }
+    .top-loc-heading{
+        color: rgb(79, 78, 78);
+    }
+    .hm-t-category{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .top-loc-heading{
+        margin-bottom: 1rem;
+    }
+    .hm-t-item a{
+        text-decoration: none;
+        padding: 0.5rem 1.5rem;
+        margin-top: 1rem;
+        border-radius: 0.5rem;
+        border: none;
+        color: #fff;
+        background-color: #0D3F7A;
+    }
+}
