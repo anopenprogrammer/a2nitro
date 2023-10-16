@@ -44,7 +44,7 @@
         justify-content: space-around;
     }
     .sign-in{
-        font-size: 0.83em;
+        /* font-size: 1.5em; */
         margin-left: 0.5em;
         text-decoration: none;
         color: #3751FF;
@@ -53,6 +53,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        font-size: 1.3rem;
+    }
+    .bottom-section h5{
+        font-size: 1.3rem;
     }
 
     /* healthcareManufacturer CSS */
