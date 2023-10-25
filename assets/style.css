@@ -1,4 +1,4 @@
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   /* Index CSS */
 
   body {
@@ -211,32 +211,32 @@
     display: flex;
     flex-direction: column;
   }
-  .filter-icon{
+  .filter-icon {
     display: flex;
     justify-content: flex-end;
     padding-right: 0.9rem;
   }
-  .top-headline{
+  .top-headline {
     margin: 0.5rem 0.9rem;
     display: flex;
     justify-content: center;
   }
-  .top-headline h4{
+  .top-headline h4 {
     margin: 0;
   }
-  .map-list-items{
-    border-bottom: 1px solid #EBEBEB;
+  .map-list-items {
+    border-bottom: 1px solid #ebebeb;
     padding-left: 2rem;
     padding-right: 2rem;
   }
-  .map-list-items h4{
+  .map-list-items h4 {
     margin: 0.8rem 0rem;
   }
-  .map-list-items p{
+  .map-list-items p {
     margin: 0.5rem 0rem;
     font-size: 0.7rem;
   }
-  .map-contact-card{
+  .map-contact-card {
     display: flex;
     justify-content: center;
     gap: 1rem;
@@ -248,32 +248,57 @@
     background-color: #fff;
   }
 
-   /* Listing CSS */
-  
+  /* Listing CSS */
+
   .list a {
     background-color: #fff;
   }
-  .new-listing{
+  .new-listing {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .new-listing-btn{
+  .new-listing-btn {
     width: 10rem;
     font-size: 0.9rem;
     border-radius: 0.5rem;
-    background-color: #3751FF;
+    background-color: #3751ff;
     border: none;
     color: white;
     padding: 0.9rem 1.8rem;
   }
-  .listing-guide{
+  .listing-guide {
     padding: 0rem 0.9rem;
     text-align: justify;
   }
-  .background-text{
-    color: #9D9D9D;
+  .background-text {
+    color: #9d9d9d;
     text-align: center;
+  }
+
+  /* Walkthrough CSS */
+
+  .walk-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .walk-sub-line,
+  .walk-main-line {
+    text-align: center;
+    padding: 0rem 3.5rem;
+  }
+  .walk-next{
+    padding: 1rem 1.5rem;
+    margin-top: 1rem;
+    width: 15rem;
+    border-radius: 0.5rem;
+    border: none;
+    color: #fff;
+    background-color: #3751ff;
+    font-size: 1rem;
+    letter-spacing: 0.08rem;
   }
 }
