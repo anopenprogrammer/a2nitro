@@ -279,4 +279,33 @@
       transform: rotate(1turn);
     }
   }
+
+  /* Login Page */
+
+  .login-mid-section{
+    display: flex;
+    flex-direction: column;
+    height: 16em;
+    justify-content: space-around;
+  }
+  #log-in-button {
+    color: #fff;
+    background-color: #3751ff;
+    border: none;
+    padding: 0.5rem 0rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  form input{
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
 }
