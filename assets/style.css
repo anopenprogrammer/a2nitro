@@ -1,4 +1,4 @@
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   /* Index CSS */
 
   body {
@@ -110,28 +110,17 @@
     flex-direction: column;
     position: relative;
   }
-  .hm-searchInputField input {
-    width: 73vw;
+  .hm-searchInputField {
     margin: 0.6rem 0.9rem;
-    height: 2.5rem;
-    border-radius: 1.5rem;
-    padding-left: 4.5rem;
     border: none;
-    background-color: hsla(38, 100%, 56%, 0.76);
-    font-weight: 500;
   }
-  .hm-searchInputField img {
-    height: 1.5rem;
-    width: 1.5rem;
-    position: absolute;
+  .select2-selection {
+    border-radius: 2rem !important;
+    background: #ffab1ec2 !important;
   }
-  .hm-searchInputField input::placeholder {
-    font-size: 1rem;
-    font-weight: 600;
-    color: #181818;
-  }
-  #myInput1 {
-    font-weight: normal;
+  .select2-selection__choice{
+    color: #fff;
+    background-color: #1b1b1b !important;
   }
   .hm-top-location {
     display: flex;
@@ -160,32 +149,6 @@
     border: none;
     color: #fff;
     background-color: #0d3f7a;
-  }
-
-  /* Drop-Down CSS */
-
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-
-  #dropdownList {
-    display: none;
-    position: absolute;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    border: 1px solid #ccc;
-    background-color: #fff;
-  }
-
-  #dropdownList li {
-    padding: 10px;
-    cursor: pointer;
-  }
-
-  #dropdownList li:hover {
-    background-color: #f0f0f0;
   }
 
   /* MapClick CSS */
@@ -277,28 +240,43 @@
     text-align: center;
   }
 
-  /* Walkthrough CSS */
+  /* Loader CSS */
 
-  .walk-container {
+  .loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
+    justify-content: center;
+    background: #333333;
+    transition: opacity 0.75s, visibility 0.75s;
+    z-index: 11;
   }
-  .walk-sub-line,
-  .walk-main-line {
-    text-align: center;
-    padding: 0rem 3.5rem;
+
+  .loader--hidden {
+    opacity: 0;
+    visibility: hidden;
   }
-  .walk-next{
-    padding: 1rem 1.5rem;
-    margin-top: 1rem;
-    width: 15rem;
-    border-radius: 0.5rem;
-    border: none;
-    color: #fff;
-    background-color: #3751ff;
-    font-size: 1rem;
-    letter-spacing: 0.08rem;
+
+  .loader::after {
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color: #009578;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+  }
+
+  @keyframes loading {
+    from {
+      transform: rotate(0turn);
+    }
+    to {
+      transform: rotate(1turn);
+    }
   }
 }

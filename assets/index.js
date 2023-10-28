@@ -1,20 +1,23 @@
-const inputElement1 = document.getElementById("myInput1");
-const inputElement2 = document.getElementById("myInput2");
-
-inputElement1.addEventListener("input", function () {
-  if (inputElement1.value) {
-    inputElement1.style.fontWeight = 600;
-    inputElement1.style.fontSize = "1rem";
-  } else {
-    inputElement1.style.fontWeight = "normal";
-  }
+$(document).ready(function () {
+  $(".select-dropdown").select2({
+    placeholder: "Select options",
+    width: "100%",
+    allowClear: true,
+  });
 });
 
-inputElement2.addEventListener("input", function () {
-  if (inputElement2.value) {
-    inputElement2.style.fontWeight = 600;
-    inputElement2.style.fontSize = "1rem";
-  } else {
-    inputElement2.style.fontWeight = "normal";
-  }
+window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
+
+  loader.classList.add("loader--hidden");
+
+  loader.addEventListener("transitionend", () => {
+    document.body.removeChild(loader);
+  });
+});
+$(document).ready(function () {
+  var loader = $(".loader");
+  loader.click(function(){
+    loader.hide();
+  });
 });

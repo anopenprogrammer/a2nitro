@@ -5,8 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="assets/style.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css"
+  />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
   </head>
   <body>
+    <div class="loader"></div>
     <div class="hm-container">
       <div class="map hm-top-section">
         <iframe
@@ -34,10 +41,18 @@
           </p>
         </div>
         <div class="hm-searchInputField">
-          <input type="text" id="myInput1" placeholder="Target Locations" />
+          <select class="select-dropdown" multiple="multiple">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+          </select>
         </div>
         <div class="hm-searchInputField">
-          <input type="text" id="myInput1" placeholder="Target Locations" />
+          <select class="select-dropdown" multiple="multiple">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+          </select>
         </div>
         <div class="hm-top-location">
           <h3 class="hm-heading top-loc-heading">Top Searched Locations</h3>
