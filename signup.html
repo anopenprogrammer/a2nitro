@@ -15,22 +15,34 @@
   </head>
   <body>
     <div class="loader"></div>
-    <div class="container">
+    <div class="signup-container">
       <div class="logo top-section">
         <img src="assets/img/logo1.png" alt="" />
       </div>
       <div class="login-mid-section">
-        <h2 class="sub-heading">Login</h2>
+        <h2 class="sign-up-sub-heading">Register account - It's free</h2>
         <form action="">
+            <input type="text" placeholder="Enter full name">
+            <br>
           <input type="text" placeholder="Enter email address" />
           <br />
           <input type="password" placeholder="Enter password" /><br />
+          <input type="text" placeholder="Enter company name">
+          <br>
+          <div class="custom-select">
+            <select>
+              <option value=""> Register yourself as... </option>
+              <option value=""> Medical Supplier </option>
+              <option value=""> Medical Distributor </option>
+            </select>
+          </div>
+          <br>
           <button id="log-in-button">Log in</button>
         </form>
       </div>
       <div class="bottom-section login-bottom-section">
-        <h5 class="text">I'm new here</h5>
-        <a href="signup.html" class="sign-in">Sign up</a>
+        <h5 class="text">Already have an account?</h5>
+        <a href="login.html" class="sign-in">Sign in</a>
       </div>
     </div>
     <script src="assets/index.js"></script>
