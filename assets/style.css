@@ -210,6 +210,9 @@
   .fav a {
     background-color: #fff;
   }
+  .filter-icon {
+    cursor: pointer;
+  }
 
   /* Listing CSS */
 
@@ -321,7 +324,6 @@
     width: 100vw;
   }
 
-  
   select {
     appearance: none;
     /* safari */
@@ -336,8 +338,115 @@
     color: #000;
     cursor: pointer;
   }
-  .sign-up-sub-heading{
+  .sign-up-sub-heading {
     text-align: center;
     font-size: 1.3rem;
+  }
+
+  /* pop-up css */
+
+  .model-container {
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    width: 85%;
+    background: #fff;
+    position: fixed;
+    top: 10%;
+    left: 2%;
+    padding: 1.2rem;
+    box-shadow: 8px 8px 16px #cfcfcf, -8px -8px 16px #ececec;
+    display: none;
+    font-size: 0.9rem;
+  }
+  .model-container select {
+    font-size: 0.8rem;
+  }
+  .fa {
+    position: absolute;
+    top: 1%;
+    left: 91%;
+    font-size: 2rem;
+  }
+  .model-container form input {
+    margin-bottom: 0rem;
+  }
+  .model-container form label {
+    line-height: 2rem;
+  }
+  .apply-button {
+    color: #fff;
+    background-color: #3751ff;
+    border: none;
+    padding: 0.5rem 0rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .cancel-button {
+    color: #1b1b1b;
+    background-color: #fff;
+    border: none;
+    padding: 0.5rem 0rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+  }
+  .fa {
+    cursor: pointer;
+  }
+  .popup-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  .scale-up-center {
+    -webkit-animation: scale-up-center 0.6s cubic-bezier(0.39, 0.575, 0.565, 1)
+      both;
+    animation: scale-up-center 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  }
+  @-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+      transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+      transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+  .scale-down-center {
+    -webkit-animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  @-webkit-keyframes scale-down-center {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    100% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+  }
+  @keyframes scale-down-center {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    100% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
   }
 }

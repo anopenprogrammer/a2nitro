@@ -4,7 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css"
+    />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
     <link rel="stylesheet" href="assets/style.css" />
   </head>
   <body>
@@ -29,8 +38,8 @@
           </div>
           <div class="hm-c-item"><a href="listing.html">Listing</a></div>
         </div>
-        <div class="filter-icon">
-          <img src="assets/img/setting 1.svg" alt="" />
+        <div class="filter-icon" onclick="showPopup()">
+          <a href="#"><img src="assets/img/setting 1.svg" alt="" /></a>
         </div>
         <div class="top-headline">
           <h4>You have searched for distributors in Dubai</h4>
@@ -45,8 +54,8 @@
               <p class="see-more">See more...</p>
             </div>
             <div class="map-contact-card">
-                <img src="assets/img/checked 1.svg" alt="">
-                <p>Contacted on 20/6/2023</p>
+              <img src="assets/img/checked 1.svg" alt="" />
+              <p>Contacted on 20/6/2023</p>
             </div>
           </div>
           <div class="map-list-items">
@@ -58,8 +67,8 @@
               <p class="see-more">See more...</p>
             </div>
             <div class="map-contact-card">
-                <img src="assets/img/checked 1.svg" alt="">
-                <p>Contacted on 20/6/2023</p>
+              <img src="assets/img/checked 1.svg" alt="" />
+              <p>Contacted on 20/6/2023</p>
             </div>
           </div>
           <div class="map-list-items">
@@ -71,10 +80,83 @@
               <p class="see-more">See more...</p>
             </div>
             <div class="map-contact-card">
-                <img src="assets/img/checked 1.svg" alt="">
-                <p>Contacted on 20/6/2023</p>
+              <img src="assets/img/checked 1.svg" alt="" />
+              <p>Contacted on 20/6/2023</p>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="model">
+      <div class="model-container scale-up-center" id="popup">
+        <div class="popup-container">
+          <span aria-hidden="true" class="fa" onclick="hidePopup()">×</span>
+          <form action="">
+            <div class="filter">
+              <label for="employees">Operating Location</label>
+              <select name="employees" id="employees">
+                <option value="">Select your location</option>
+                <option value="option1">India</option>
+                <option value="option2">Saudi Arabia</option>
+                <option value="option3">Denmark</option>
+              </select>
+            </div>
+            <div class="filter">
+              <label for="employees">Industries catered</label>
+              <select name="employees" id="employees">
+                <option value="">Select your industry</option>
+                <option value="option1">Medical Equipment</option>
+                <option value="option2">IT Infrastructure</option>
+                <option value="option3">Hospitality</option>
+              </select>
+            </div>
+            <!-- <div class="filter">
+          <label for="select-dropdown1">Operating Locations</label>
+          <select
+            id="select-dropdown1"
+            class="select-dropdown"
+            multiple="multiple"
+          >
+            <option value="option1">India</option>
+            <option value="option2">Saudi Arabia</option>
+            <option value="option3">Denmark</option>
+          </select>
+        </div>
+        <div class="filter">
+          <label for="select-dropdown2">Industries catered</label>
+          <select
+            id="select-dropdown2"
+            class="select-dropdown"
+            multiple="multiple"
+          >
+            <option value="option1">Medical Equipment</option>
+            <option value="option2">IT Infrastructure</option>
+            <option value="option3">Hospitality</option>
+          </select>
+        </div> -->
+            <div class="filter">
+              <label for="employees">Company Size</label>
+              <select name="employees" id="employees">
+                <option value="option1">10-50 employees</option>
+                <option value="option2">50-200 employees</option>
+                <option value="option3">200-500 employees</option>
+              </select>
+            </div>
+            <div class="filter">
+              <label for="op-years">Operational Years</label>
+              <select name="op-years" id="op-years">
+                <option value="option1">10-50 employees</option>
+                <option value="option2">50-200 employees</option>
+                <option value="option3">200-500 employees</option>
+              </select>
+            </div>
+            <label for="website">Website details</label>
+            <input type="text" name="website" id="website" />
+            <label for="phone">Phone number</label>
+            <input type="number" name="phone" id="phone" />
+            <button class="apply-button">Apply</button>
+            <button class="cancel-button">Cancel</button>
+          </form>
         </div>
       </div>
     </div>
