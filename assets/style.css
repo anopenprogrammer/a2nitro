@@ -163,6 +163,7 @@
     height: 30vh;
     width: 100%;
   }
+
   .mp-bottom-section {
     height: 75vh;
     position: absolute;
@@ -178,6 +179,15 @@
     display: flex;
     justify-content: flex-end;
     padding-right: 0.9rem;
+    cursor: pointer;
+  }
+  .filter-icon button {
+    border: none;
+    background-color: #fff;
+  }
+  .filter-icon button:active {
+    background-color: #e1e1e1;
+    border-radius: 5px;
   }
   .top-headline {
     margin: 0.5rem 0.9rem;
@@ -209,9 +219,6 @@
 
   .fav a {
     background-color: #fff;
-  }
-  .filter-icon {
-    cursor: pointer;
   }
 
   /* Listing CSS */
@@ -354,11 +361,12 @@
     background: #fff;
     position: fixed;
     top: 10%;
-    left: 2%;
+    left: 2.5%;
     padding: 1.2rem;
     box-shadow: 8px 8px 16px #cfcfcf, -8px -8px 16px #ececec;
     display: none;
     font-size: 0.9rem;
+    transform: translate(-50%, -50%);
   }
   .model-container select {
     font-size: 0.8rem;
@@ -426,27 +434,28 @@
     }
   }
   .scale-down-center {
-    -webkit-animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-            animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-animation: scale-down-center 0.4s
+      cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: scale-down-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   }
   @-webkit-keyframes scale-down-center {
     0% {
       -webkit-transform: scale(1);
-              transform: scale(1);
+      transform: scale(1);
     }
     100% {
       -webkit-transform: scale(0.5);
-              transform: scale(0.5);
+      transform: scale(0.5);
     }
   }
   @keyframes scale-down-center {
     0% {
       -webkit-transform: scale(1);
-              transform: scale(1);
+      transform: scale(1);
     }
     100% {
       -webkit-transform: scale(0.5);
-              transform: scale(0.5);
+      transform: scale(0.5);
     }
   }
 }
